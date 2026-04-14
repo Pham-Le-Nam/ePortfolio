@@ -12,6 +12,7 @@ const App: React.FC = () => {
           <a href="#landing" className="hover:text-blue-500">Home</a>
           <a href="#resume" className="hover:text-blue-500">Resume</a>
           <a href="#cover" className="hover:text-blue-500">Cover Letter</a>
+          <a href="https://pham-le-nam.github.io/ePortfolio/" className="text-blue-700 hover:underline">https://pham-le-nam.github.io/ePortfolio/</a>
         </div>
       </nav>
 
