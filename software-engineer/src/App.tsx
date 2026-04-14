@@ -1,16 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import React from "react";
+import Landing from "./modules/landing/Landing";
+import Resume from "./modules/Resume";
+import CoverLetter from "./modules/cover-letter/CoverLetter";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <div className='text-5xl'>
-      Hello World
-    </div>
-  )
-}
+    <div className="font-sans">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-white shadow z-50">
+        <div className="max-w-6xl mx-auto flex justify-center gap-6 py-4">
+          <a href="#landing" className="hover:text-blue-500">Home</a>
+          <a href="#resume" className="hover:text-blue-500">Resume</a>
+          <a href="#cover" className="hover:text-blue-500">Cover Letter</a>
+        </div>
+      </nav>
 
-export default App
+      {/* Sections */}
+      <div id="landing" className="pt-20">
+        <Landing />
+      </div>
+
+      <div id="resume" className="bg-white">
+        <Resume />
+      </div>
+
+      <div id="cover" className="bg-gray-50">
+        <CoverLetter />
+      </div>
+    </div>
+  );
+};
+
+export default App;
