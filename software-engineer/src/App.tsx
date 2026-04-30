@@ -2,6 +2,7 @@ import React from "react";
 import Landing from "./modules/landing/Landing";
 import Resume from "./modules/Resume";
 import CoverLetter from "./modules/cover-letter/CoverLetter";
+import Reflection from "./modules/Reflection";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
           <a href="#landing" className="hover:text-blue-500">Home</a>
           <a href="#resume" className="hover:text-blue-500">Resume</a>
           <a href="#cover" className="hover:text-blue-500">Cover Letter</a>
+          <a href="#reflection" className="hover:text-blue-500">Reflection</a>
           <a href="https://pham-le-nam.github.io/ePortfolio/" className="text-blue-700 hover:underline">https://pham-le-nam.github.io/ePortfolio/</a>
         </div>
       </nav>
@@ -27,6 +29,10 @@ const App: React.FC = () => {
 
       <div id="cover" className="bg-gray-50">
         <CoverLetter />
+      </div>
+
+      <div id="reflection" className="bg-white">
+        <Reflection />
       </div>
     </div>
   );
